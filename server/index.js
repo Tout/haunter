@@ -1,6 +1,5 @@
 // TOUT Configuration
-// const BRAND_UID = '21fac0'; // IZOD
-const BRAND_UID = '8f84cd';
+const BRAND_UID = 'e43ddc';
 const LOCAL_FILES = '/videos';
 const LOCAL_PAYLOAD = '/js/payload.js';
 
@@ -15,9 +14,7 @@ const download = require('download');
 download(`http://platform.tout.com/sdk/v2/payload.json?brand_uid=${BRAND_UID}`).then(data => {
   try {
     const payload = JSON.parse(data.toString());
-    //TODO: the IZOD account should only have one product
-    //    : until it's ready, use a test account and find someone with touts.
-    const product = payload.products.find(p => p.touts && p.touts.length > 0);
+    const product = payload.products[0];  // for the example, just use the frist product.
     const touts = product.touts;
 
     // Create an array of urls to download.
