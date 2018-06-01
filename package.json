@@ -1,0 +1,29 @@
+{
+  "name": "gastly",
+  "version": "1.0.0",
+  "description": "static test pages for Tout",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tout/gastly.git"
+  },
+  "author": "TOUT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tout/gastly/issues"
+  },
+  "homepage": "https://github.com/Tout/gastly#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "download": "^7.0.0",
+    "express": "^4.16.3",
+    "http-server": "^0.11.1",
+    "lodash.get": "^4.4.2"
+  },
+  "devDependencies": {
+    "hotel": "^0.8.6"
+  }
+}

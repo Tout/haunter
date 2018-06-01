@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Haunter: Local Tout Video Player Testing</title>
+
+  <!-- Include the Tout SDK -->
+  <link href="https://platform.tout.com/sdk/v2/sdk.css" rel="stylesheet" />
+  <script src="https://platform.tout.com/sdk/v2/sdk.js" async></script>
+  <!-- Advanced embed code -->
+  <script>
+    // create the global if it does not exist yet.
+    window.TOUT = window.TOUT || {};
+    window.TOUT.endpoints = {
+      api: 'api.tout.com',
+      player: 'player.tout.com',
+      analytics: 'analytics.tout.com',
+      tesla: 'platform.tout.com',
+      comscore: 'http://assets.tout.com/js_libs/third_party/comScore/6.2.1.180301/comScore-JS-6.2.1.180301.min.js',
+    };
+    TOUT._loadPayload = function ToutPayload(payload) {
+      // just wait for the SDK to be ready
+      // We do this because the script/css/data can arrive in any order.
+      if (!TOUT.start) {
+        setTimeout(ToutPayload, 100, payload);
+        return;
+      }
+      // Create all the products/players.
+      TOUT.start(payload);
+    };
+  </script>
+  <!-- Load the payload from local -->
+  <script src="/js/payload.js"></script>
+</head>
+<body>
+  <h1>Belligerent and numerous.</h1>
+  <img src="https://picsum.photos/800/300/?random"></img>
+
+<div class="tout-player" tout-uid="xnau8h"></div>
+
+  <p>Soon enough. Yes. You gave me a dollar and some candy. When will that be? For the last time, I don't like lilacs! Your 'first' wife was the one who liked lilacs! Michelle, I don't regret this, but I both rue and lament it.</p>
+  <p>I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas. <strong> We don't have a brig.</strong> <em> Leela, Bender, we're going grave robbing.</em> You're going to do his laundry?</p>
+  <h2>Meh.</h2>
+  <img src="https://picsum.photos/400/200/?random"></img>
+  <p>Bender, you risked your life to save me! Negative, bossy meat creature! I found what I need. And it's not friends, it's things. Shinier than yours, meatbag.</p>
+  <ol>
+  <li>Kids don't turn rotten just from watching TV.</li><li>You don't know how to do any of those.</li><li>Who are you, my warranty?!</li>
+  </ol>
+
+  <h3>Moving along…</h3>
+<div class="tout-mid-article"></div>
+  <p>When the lights go out, it's nobody's business what goes on between two consenting adults. Oh yeah, good luck with that. That's not soon enough! I don't want to be rescued. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry?</p>
+  <ul>
+  <li>Why did you bring us here?</li><li>WINDMILLS DO NOT WORK THAT WAY! GOOD NIGHT!</li><li>Say what?</li>
+  </ul>
+
+  <img src="https://picsum.photos/300/300/?random"></img>
+  <p>Moving along… Good news, everyone! I've taught the toaster to feel love! I daresay that Fry has discovered the smelliest object in the known universe! With gusto. I daresay that Fry has discovered the smelliest object in the known universe!</p>
+  <p>Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket. Oh God, what have I done?</p>
+  <p>Are you crazy? I can't swallow that. Pansy. Oh God, what have I done? Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.</p>
+  <p>Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. That's a popular name today. Little "e", big "B"? You lived before you met me?! Noooooo! Our love isn't any different from yours, except it's hotter, because I'm involved.</p>
+  <p>That's right, baby. I ain't your loverboy Flexo, the guy you love so much. You even love anyone pretending to be him! This is the worst part. The calm before the battle. How much did you make me? Well, thanks to the Internet, I'm now bored with sex. Is there a place on the web that panders to my lust for violence?</p>
+  <p>Check it out, y'all. Everyone who was invited is here. I guess if you want children beaten, you have to do it yourself. You don't know how to do any of those. Doomsday device? Ah, now the ball's in Farnsworth's court!</p>
+  <p>Aww, it's true. I've been hiding it for so long. Your best is an idiot! No! The kind with looting and maybe starting a few fires! In our darkest hour, we can stand erect, with proud upthrust bosoms.</p>
+  <p>Yes, I saw. You were doing well, until everyone died. When will that be? Stop! Don't shoot fire stick in space canoe! Cause explosive decompression! Fry, you can't just sit here in the dark listening to classical music.</p>
+  <p>And until then, I can never die? A true inspiration for the children. Do a flip! I videotape every customer that comes in here, so that I may blackmail them later. I can explain. It's very valuable.</p>
+  <p>You know the worst thing about being a slave? They make you work, but they don't pay you or let you go. Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans!</p>
+  <p>You're going to do his laundry? Who are you, my warranty?! Yes! In your face, Gandhi! No, I'm Santa Claus! Hello Morbo, how's the family?</p>
+
+</body>
+</html>
