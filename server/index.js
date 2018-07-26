@@ -52,6 +52,14 @@ download(`http://platform.tout.com/sdk/v2/payload.json?brand_uid=${BRAND_UID}`).
       return tout;
     });
 
+    // Override some LKQD settings to make the tag work with a native app
+    product.lkqdQueryOverrides = {
+      gdpr: 0, // 0 should work
+      gdprcs: '', // Empty string should work
+      appName: 'INSERT_YOUR_APP_NAME_HERE', //EXAMPLE: 'Izon'
+      bundleId: 'INSERT_YOUR_BUNDLE_IDEA_HERE', //EXAMPLE: 'com.example.testapp'
+    };
+
     // write the new payload.js to use.
     //NOTE: The async download most likely will not be complete by the time this runs.
     //NOTE: That's ok, the urls will match once the download finishes.
